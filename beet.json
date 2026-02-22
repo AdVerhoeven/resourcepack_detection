@@ -1,0 +1,34 @@
+{
+     "data_pack": {
+        "load": ["src/datapack"],
+        "name": "Example Datapack",
+        "min_format": [88,0],
+        "max_format": [94,1],
+        "zipped": true
+    },
+    "resource_pack": {
+        "load": ["src/resourcepack"],
+        "name": "Example Resourcepack",
+        "min_format": [69,0],
+        "max_format": [75,0],
+        "zipped": true
+    },
+    "pipeline": [
+        "plugins.custom.main",
+        "mecha"
+    ],
+    "id": "ex",
+    "name": "Example",
+    "description": "",
+    "version": "1.0.0a",
+    "require": [
+        "bolt",
+        "bolt_expressions"
+    ],
+    "output": "build",
+    "meta": {
+        "bolt": {
+            "entrypoint": ["ex:main"]
+        }
+    }
+}
